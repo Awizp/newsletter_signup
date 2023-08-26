@@ -15,7 +15,7 @@ const emailSubmit = () => {
     const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (input.value.match(validRegex)) {
         const newEmail = input.value
-        newsLetter.style.display = "none"
+        newsLetter.classList.add("hidden")
         targetEmail.textContent = newEmail
         success.classList.remove("hidden")
     }
@@ -30,7 +30,7 @@ submitBtn.addEventListener("click", emailSubmit)
 // Dismiss the success page,
 const dismissPage = () => {
     success.classList.add("hidden")
-    newsLetter.style.display = "flex"
+    newsLetter.classList.remove("hidden")
     input.focus()
 }
 
