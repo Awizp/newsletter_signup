@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
+
+  <title>Frontend Mentor | Newsletter sign-up</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+
+  <div class="newsletter_container">
+    <div class="message_container">
+      <h1 class="message_title">Stay updated!</h1>
+
+      <p class="message_subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <div class="message_list">
+        <p class="list_item"><img src="/assets/images/icon-list.svg" alt="">Product discovery and building what matters
+        </p>
+        <p class="list_item"><img src="/assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success
+        </p>
+        <p class="list_item"><img src="/assets/images/icon-list.svg" alt="">And much more!</p>
+      </div>
+
+      <label for="email">Email address</label>
+      <input class="message_input" type="email" name="email" placeholder="email@company.com" size="30" required>
+
+      <button type="submit" class="message_button">Subscribe to monthly newsletter</button>
+    </div>
+    <div class="image_container">
+      <picture>
+        <source media="(max-width: 450px)" srcset="./assets/images/illustration-sign-up-mobile.svg" alt="mobile" />
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop" />
+      </picture>
+    </div>
+  </div>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <div class="success_container hidden">
+    <img class="success_img" src="./assets/images/icon-success.svg" alt="success" />
+
+    <h1 class="success_title">Thanks for subscribing!</h1>
+
+    <p class="success_detail">A confirmation email has been sent to <b class="target_email">ash@loremcompany.com</b>.
+      Please open it and click the button inside to confirm your subscription.</p>
+
+    <button class="success_button">Dismiss message</button>
+  </div>
+
+  <!-- Success message end -->
+
+  <footer class="footer_container">
+    Challenge by <a href="https://www.frontendmentor.io/profile/Awizp" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Awizp" target="_blank">Awizp</a>.
+  </footer>
+</body>
+
+</html>
